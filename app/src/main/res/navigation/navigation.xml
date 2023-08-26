@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/addItemFragment">
+
+    <fragment
+        android:id="@+id/addItemFragment"
+        android:name="com.example.kafic.AddItemFragment"
+        android:label="fragment_add_item"
+        tools:layout="@layout/fragment_add_item" >
+        <action
+            android:id="@+id/action_addItemFragment_to_pricelistFragment"
+            app:destination="@id/pricelistFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pricelistFragment"
+        android:name="com.example.kafic.PricelistFragment"
+        android:label="fragment_pricelist"
+        tools:layout="@layout/fragment_pricelist" />
+</navigation>
